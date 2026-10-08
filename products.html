@@ -1,0 +1,202 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lavender Loops | Products</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header">
+
+        <a href="index.html" class="logo">
+            ♡ Lavender Loops
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="products.html">Products</a>
+            <a href="preorder.html">Pre-Order</a>
+            <a href="about.html">Our Story</a>
+            <a href="testi.html">Reviews</a>
+            <a href="contact.html">Customer Service</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="intro">
+
+    <p class="label">READY TO ORDER</p>
+
+    <h2>
+        Our <span>Products</span>
+    </h2>
+
+    <p>
+        Browse our handmade crochet creations.
+        Each item is carefully made with love.
+    </p>
+
+    <div class="product-container">
+
+        <div class="product">
+            <div class="product-icon">🌷</div>
+
+            <h3> Crochet Flower Bouquet</h3>
+
+            <p>
+                A handmade flower bouquet that lasts forever.
+            </p>
+
+            <strong>₱850</strong>
+
+            <br><br>
+
+            <a href="preorder.html" class="button">
+                Order
+            </a>
+        </div>
+
+
+        <div class="product">
+            <div class="product-icon">👜</div>
+
+            <h3>Crochet Bag</h3>
+
+            <p>
+                A cute and useful handmade crochet bag.
+            </p>
+
+            <strong>₱1,200</strong>
+
+            <br><br>
+
+            <a href="preorder.html" class="button">
+                Order
+            </a>
+        </div>
+
+
+        <div class="product">
+            <div class="product-icon">🧸</div>
+
+            <h3>Crochet Plushie</h3>
+
+            <p>
+                A soft and adorable handmade crochet friend.
+            </p>
+
+            <strong>₱550</strong>
+
+            <br><br>
+
+            <a href="preorder.html" class="button">
+                Order
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <h3>♡ Lavender Loops</h3>
+
+    <p>Handmade crochet creations with love.</p>
+
+    <p class="copyright">
+        © 2026 Lavender Loops. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
+```
+```css
+/* ==============================
+   PRODUCTS
+============================== */
+
+.product-container {
+    max-width: 1000px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.product {
+    padding: 30px 20px;
+
+    background-color: #fcf9ff;
+
+    border: 1px solid #dfd0ea;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(100, 70, 120, 0.08);
+
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(100, 70, 120, 0.15);
+}
+
+.product-icon {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    color: #6d4c83;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+}
+
+.product p {
+    color: #756c7c;
+
+    line-height: 1.6;
+}
+
+.product strong {
+    color: #9675b8;
+
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+```
